@@ -4,10 +4,14 @@ import React from "react";
 function nameTag(props) {
   // <Fragment></Fragment>
   // <></>
-  return [
-    <h3 className="name">First Name {props.firstName}</h3>,
-    <h3 className="name">Last Name {props.lastName}</h3>,
-  ];
+  // <div></div>
+  // [] => return Array
+  return (
+    <div className="name">
+      <h3>First Name {props.firstName}</h3>
+      <h3>Last Name {props.lastName}</h3>
+    </div>
+  );
 }
 
 export default nameTag;
