@@ -12,8 +12,8 @@ function nameTag(props) {
 
   return (
     <div className="name">
-      <h3>First Name {props.firstName}</h3>
-      <h3>Last Name {props.lastName}</h3>
+      <h3 style={props.style}>First Name {props.firstName}</h3>
+      <h3 style={props.style}>Last Name {props.lastName}</h3>
       {props.firstName === "Thet" && <div style={{ color: "yellow" }}>VIP</div>}
     </div>
   );
